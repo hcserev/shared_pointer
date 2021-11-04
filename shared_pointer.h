@@ -33,6 +33,11 @@ public:
         reset();
     }
 
+    T* get()
+    {
+        return ptr;
+    }
+    
     void reset()
     {
         if (contrBlock && --contrBlock->refCounter == 0)
