@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
-set(This ExampleTests)
+set(This shared_pointer_tests)
 
 set(Sources
-	ExampleTests.cpp
+	shared_ptr_tests.cpp
 )
 
 add_executable(${This} ${Sources})
@@ -14,4 +14,5 @@ shared_pointer
 
 add_test(
 NAME ${This}
-COMMAND ${This})
+COMMAND ${This}
+)
