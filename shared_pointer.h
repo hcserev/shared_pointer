@@ -1,3 +1,5 @@
+#ifndef SHARED_POINTER_H
+#define SHARED_POINTER_H
 
 template <class T>
 class MySharedPtr
@@ -56,3 +58,5 @@ private:
     T* ptr = nullptr;
     ControlBlock* contrBlock = nullptr;
 };
+
+#endif //SHARED_POINTER_H

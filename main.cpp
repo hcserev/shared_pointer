@@ -1,4 +1,5 @@
 #include "shared_pointer.h"
+#include "gtest/gtest.h"
 
 int main()
 {
