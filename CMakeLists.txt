@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(shared_pointer)
+project(shared_pointer C CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -9,12 +9,14 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 add_subdirectory(googletest)
 
+set(sources main.cpp)
 set(headers shared_pointer.h)
 
 include_directories("${PROJECT_SOURCE_DIR}/headers"
  "googletest/googletest/include/")
 
 add_library(${PROJECT_NAME} STATIC
+               ${sources}
                ${headers})
 
 add_subdirectory(shared_ptr_tests)
